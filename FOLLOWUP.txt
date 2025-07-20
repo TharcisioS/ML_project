@@ -1,3 +1,5 @@
+TUTORIAL 1 - PROJECT STRUCTURE SETUP.PY
+
 1- Set up GitHub repository
 * new environment
 	create folder
@@ -17,9 +19,57 @@
 	create .gitignore directly on GitHub (> new file > .gitignore > choose python template > commit)
 	pull the changes back to the local folder (>> git pull)
 	
+
+
 * setup.py
 	Works for building the ML application as a package
 	create setup.py file 
+	import from setuptools (find_packages and setup)
+	write function for reading requirements.txt
+	configure setup function
+
 
 * requirements.txt
+	It's the list of required packages. Will be used by setup.py
+	create txt file
+	list the required packages
+	link file to setup.py by adding "-e ." at its end.
+	install the packages with pip (>> pip install -r requirements.txt)
 
+	after that  the folder MLproject.egg-info will be created
+	add the changes (>> git add .)
+	commit it (>> git commit -m "setup")
+	and push (>> git push -u origin main)
+
+
+
+
+TUTORIAL 1 - PROJECT STRUCTURE src folder
+
+Every folder concerning the project structure must have a __ini__.py file so it can be imported as a class
+
+[src
+	[components
+		__init__.py
+		data_ingestion.py
+		data_transformation.py
+		model_trainer.py
+	[pipeline
+		__init__.py
+		predict_pipeline.py
+		train_pipeline.py
+	__init__.py
+	exception.py  #haldles exceptions, use with try/catch
+	logger.py  # saves the logs into a file for tracking executions
+	utils.py
+
+
+
+
+
+
+
+
+
+
+	
