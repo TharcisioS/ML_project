@@ -1,0 +1,25 @@
+1- Set up GitHub repository
+* new environment
+	create folder
+	open folder on vscode - done through anaconda prompt (>> cd "folder path" >> code .)
+	create venv in the project folder - done through vscode terminal (>> onda create -p venv python==3.11 -y)
+	activate venv (>> conda activate venv/)
+	inicialize git instance (>> git init)
+	create README.md on the folder
+	git add readme file (>> git add README.md)
+	commit the changes with message 
+"First commit" (>> git commit -m "First commit")
+	make sure main branch is selected (>> git branch -M main)
+	make sure that the folderis in synch with the GitHub repository by adding an origin (>> git remote add origin https://github.com/TharcisioS/ML_project.git)
+	check origin (>> git remote -v)
+	configure git global by informing credentials, if not configured
+	push commits (>> git push -u origin main)
+	create .gitignore directly on GitHub (> new file > .gitignore > choose python template > commit)
+	pull the changes back to the local folder (>> git pull)
+	
+* setup.py
+	Works for building the ML application as a package
+	create setup.py file 
+
+* requirements.txt
+
